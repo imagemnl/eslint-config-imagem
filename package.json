@@ -1,0 +1,35 @@
+{
+  "name": "lint-config-imagem",
+  "version": "1.0.0",
+  "description": "Lint configuration files for Imagem projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagemnl/lint-config-imagem.git"
+  },
+  "author": "ImagemNL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imagemnl/lint-config-imagem/issues"
+  },
+  "homepage": "https://github.com/imagemnl/lint-config-imagem#readme",
+  "keywords": [
+    "lint",
+    "eslint",
+    "stylelint",
+    "prettier"
+  ],
+  "files": [
+    "eslint.config.js",
+    "eslint.js",
+    "prettier.config.js",
+    "prettier.js",
+    "stylelint.config.js",
+    "stylelint.js"
+  ],
+  "dependencies": {
+    "eslint": "~5.16.0",
+    "prettier": "~1.19.1",
+    "stylelint": "~13.0.0",
+    "stylelint-config-standard": "~19.0.0"
+  }
+}
