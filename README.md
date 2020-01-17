@@ -2,10 +2,15 @@
 
 Lint configuration files voor projecten binnen Imagem.
 Bevat bestanden voor:
+
 - Eslint
 - Stylelint
 - Prettier
 - VS Code settings.json
+
+Omdat prettier niet de configuratie bevat die gewenst is,
+wordt gebruik gemaakt van de formatting style van eslint en stylelint.
+Deze instellingen voor vscode zijn bijgeleverd zodat dit automatisch wordt toegepast.
 
 ## Requirements
 
@@ -16,8 +21,37 @@ Bevat bestanden voor:
 ## Install
 
 Windows:
+
 ```
-> npm i -D git+ssh://git@github.com/imagemnl/lint-config-imagem.git
+> npm i -D git+ssh://git@github.com/imagemnl/eslint-config-imagem.git
+```
+
+## Configuration
+
+Om deze lint instellingen in een project te gebruiken zijn de volgende instellingen nodig:
+
+`eslint.config.js`
+
+```javascript
+{
+  extends: ["imagem/eslint"],
+}
+```
+
+---
+
+`stylelint.config.js`
+
+```javascript
+module.exports = require("eslint-config-imagem/stylelint");
+```
+
+---
+
+`prettier.config.js`
+
+```javascript
+module.exports = require("eslint-config-imagem/prettier");
 ```
 
 ---
@@ -29,9 +63,9 @@ Deze settings zorgen ervoor dat de `.js` en `.vue` bestanden worden gestyled aan
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true, // For ESLint
-    "source.fixAll.stylelint": true, // For Stylelint
-    "editor.action.formatDocument": true // Other files
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "editor.action.formatDocument": true
   },
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
