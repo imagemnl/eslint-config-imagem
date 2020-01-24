@@ -16,7 +16,7 @@ module.exports = {
     // "declaration-no-important": false,
     "declaration-colon-space-before": "never",
     "declaration-colon-space-after": "always",
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "function-url-quotes": "always",
     "comment-whitespace-inside": "always",
     "rule-empty-line-before": ["always-multi-line", { ignore: ["after-comment", "first-nested"] }],
