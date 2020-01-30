@@ -27,5 +27,11 @@ module.exports = {
     "media-feature-parentheses-space-inside": "never",
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: ["function", "if", "each", "include", "mixin"],
+      },
+    ],
   },
 };

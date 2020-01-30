@@ -1,7 +1,5 @@
 module.exports = {
   rules: {
-    "array-bracket-newline": ["error", { multiline: true }],
-    "array-element-newline": ["error", { multiline: true, minItems: 3 }],
     "arrow-parens": ["error", "always"],
     "comma-dangle": ["error", "always-multiline"],
     curly: ["error", "multi-line"],
