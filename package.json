@@ -19,7 +19,12 @@
     "prettier"
   ],
   "files": [
+    "eslint-config/.eslintrc.js",
+    "eslint-config/nuxt.js",
+    "eslint-config/vue.js",
     "eslint.config.js",
+    "eslint-nuxt.js",
+    "eslint-vue.js",
     "eslint.js",
     "prettier.config.js",
     "prettier.js",
