@@ -3,14 +3,12 @@
 Lint configuration files voor projecten binnen Imagem.
 Bevat bestanden voor:
 
-- Eslint
+- Eslint (Vue & Nuxt projecten)
 - Stylelint
 - Prettier
 - VS Code settings.json
 
-Omdat prettier niet de configuratie bevat die gewenst is,
-wordt gebruik gemaakt van de formatting style van eslint en stylelint.
-Deze instellingen voor vscode zijn bijgeleverd zodat dit automatisch wordt toegepast.
+Alle code wordt geformat aan de hand van de prettier en eslint richtlijnen. Meer info op [Prettier vs. Linters](https://prettier.io/docs/en/comparison.html)
 
 ## Requirements
 
@@ -56,28 +54,42 @@ module.exports = require("eslint-config-imagem/prettier");
 
 ---
 
+### Uitbreidingen
+
+Om de eslint instellingen voor Vue of Nuxt projecten toe te passen kan de volgende configuratie worden toegepast
+
+`eslint.config.js in Vue projecten`
+
+```javascript
+{
+  extends: ["imagem/eslint-vue"],
+}
+```
+
+`eslint.config.js in Nuxt projecten`
+
+```javascript
+{
+  extends: ["imagem/eslint-nuxt"],
+}
+```
+
 ## Visual Studio Code settings
 
-Deze settings zorgen ervoor dat de `.js` en `.vue` bestanden worden gestyled aan de hand van eslint configuratie. Voor alle andere bestanden wordt prettier gebruikt.
+Simpele vscode settings om prettier te gebruiken als code formatter.
 
 ```json
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "editor.action.formatDocument": true
-  },
-
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[vue]": {
-    "editor.formatOnSave": false
-  }
+  "editor.formatOnSave": true
 }
 ```
+
+## TODO's
+
+- Controle of het inladen van Vue en Nuxt specifieke configuratie goed gaat
+- Correct instellen van peer dependencies
+- Typescript ondersteuning
+- Optioneel maken van stylelint (voor backend projecten die deze lint vorm niet nodig hebben)
 
 Enjoy! :)
