@@ -18,10 +18,8 @@ Alle code wordt geformat aan de hand van de prettier en eslint richtlijnen. Meer
 
 ## Install
 
-Windows:
-
 ```
-> npm i -D git+ssh://git@github.com/imagemnl/eslint-config-imagem.git
+> npm i -D @imagem/eslint-config
 ```
 
 ## Configuration
@@ -32,7 +30,7 @@ Om deze lint instellingen in een project te gebruiken zijn de volgende instellin
 
 ```javascript
 {
-  extends: ["imagem/eslint"],
+  extends: ["@imagem/eslint-config"],
 }
 ```
 
@@ -41,7 +39,7 @@ Om deze lint instellingen in een project te gebruiken zijn de volgende instellin
 `stylelint.config.js`
 
 ```javascript
-module.exports = require("eslint-config-imagem/stylelint");
+module.exports = require("@imagem/eslint-config/stylelint");
 ```
 
 ---
@@ -49,7 +47,7 @@ module.exports = require("eslint-config-imagem/stylelint");
 `prettier.config.js`
 
 ```javascript
-module.exports = require("eslint-config-imagem/prettier");
+module.exports = require("@imagem/eslint-config/prettier");
 ```
 
 ---
@@ -62,7 +60,7 @@ Om de eslint instellingen voor Vue of Nuxt projecten toe te passen kan de volgen
 
 ```javascript
 {
-  extends: ["imagem/eslint-vue"],
+  extends: ["@imagem/eslint-config/eslint-vue"],
 }
 ```
 
@@ -70,7 +68,7 @@ Om de eslint instellingen voor Vue of Nuxt projecten toe te passen kan de volgen
 
 ```javascript
 {
-  extends: ["imagem/eslint-nuxt"],
+  extends: ["@imagem/eslint-config/eslint-nuxt"],
 }
 ```
 

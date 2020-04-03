@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-imagem",
+  "name": "@imagem/eslint-config",
   "version": "0.0.2",
   "description": "Lint configuration files for Imagem projects",
   "repository": {
@@ -8,6 +8,9 @@
   },
   "author": "ImagemNL",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/imagemnl/eslint-config-imagem/issues"
   },
