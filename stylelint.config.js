@@ -1,5 +1,5 @@
 module.exports = {
-  extends: "stylelint-config-standard",
+  extends: require.resolve("stylelint-config-standard"),
   rules: {
     indentation: 2,
     "string-quotes": "double",
