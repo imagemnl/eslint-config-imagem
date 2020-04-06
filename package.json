@@ -1,6 +1,6 @@
 {
   "name": "@imagem/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Lint configuration files for Imagem projects",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
     "eslint-config/.eslintrc.js",
     "eslint-config/nuxt.js",
     "eslint-config/vue.js",
-    "eslint.config.js",
+    ".eslintrc.js",
     "eslint-nuxt.js",
     "eslint-vue.js",
     "eslint.js",
@@ -43,8 +43,8 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-prettier": "3.1.2",
-    "prettier": "2.0.2",
-    "stylelint": "13.2.1",
+    "prettier": "2.0.4",
+    "stylelint": "13.3.0",
     "stylelint-config-standard": "20.0.0"
   },
   "peerDependencies": {
