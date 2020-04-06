@@ -27,10 +27,28 @@ module.exports = {
     "media-feature-parentheses-space-inside": "never",
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        ignoreAtRules: ["function", "if", "else", "each", "include", "mixin", "extend"],
+      },
+    ],
     "at-rule-no-unknown": [
       true,
       {
         ignoreAtRules: ["function", "if", "else", "each", "include", "mixin", "extend"],
+      },
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        ignore: [
+          "after-comment",
+          "first-nested",
+          "inside-block",
+          "blockless-after-same-name-blockless",
+          "blockless-after-blockless",
+        ],
       },
     ],
   },
