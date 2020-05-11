@@ -18,8 +18,34 @@ Alle code wordt geformat aan de hand van de prettier en eslint richtlijnen. Meer
 
 ## Install
 
+Use the package using the following line.
+
 ```
 > npm i -D @imagem/eslint-config
+```
+
+### Vue or Nuxt configuration
+
+When you want to use the Vue or Nuxt settings, you need the right dependencies. These are marked as peerDependencies.
+
+#### Using Vue
+
+```
+> npm i -D eslint-plugin-vue
+```
+
+#### Using Nuxt
+
+```
+> npm i -D eslint-plugin-nuxt
+```
+
+#### Stylelint
+
+When you want to use the stylelinter in the project, you need the configurations from prettier. These are marked as peerDependencies.
+
+```
+> npm i -D stylelint stylelint-prettier stylelint-config-prettier
 ```
 
 ## Configuration
@@ -88,6 +114,5 @@ Simpele vscode settings om prettier te gebruiken als code formatter.
 - Controle of het inladen van Vue en Nuxt specifieke configuratie goed gaat
 - Correct instellen van peer dependencies
 - Typescript ondersteuning
-- Optioneel maken van stylelint (voor backend projecten die deze lint vorm niet nodig hebben)
 
 Enjoy! :)
