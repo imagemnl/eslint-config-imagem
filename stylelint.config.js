@@ -1,3 +1,3 @@
-module.exports = {
-  extends: require.resolve("stylelint-prettier/recommended"),
+module.export = {
+  extends: ["stylelint-prettier/recommended"],
 };
