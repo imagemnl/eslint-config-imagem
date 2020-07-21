@@ -21,7 +21,7 @@ Alle code wordt geformat aan de hand van de prettier en eslint richtlijnen. Meer
 Use the package using the following line.
 
 ```
-> npm i -D eslint babel-eslint @imagem/eslint-config
+$ npm i -D eslint babel-eslint @imagem/eslint-config
 ```
 
 ### Vue or Nuxt configuration
@@ -31,13 +31,13 @@ When you want to use the Vue or Nuxt settings, you need the right dependencies. 
 #### Using Vue
 
 ```
-> npm i -D eslint-plugin-vue
+$ npm i -D eslint-plugin-vue
 ```
 
 #### Using Nuxt
 
 ```
-> npm i -D eslint-plugin-nuxt
+$ npm i -D eslint-plugin-nuxt
 ```
 
 #### Stylelint
@@ -45,7 +45,7 @@ When you want to use the Vue or Nuxt settings, you need the right dependencies. 
 If you want to use stylelint in the project, you need the configurations from prettier. These are marked as peerDependencies.
 
 ```
-> npm i -D stylelint stylelint-prettier stylelint-config-prettier
+$ npm i -D stylelint stylelint-prettier stylelint-config-prettier
 ```
 
 ## Configuration
