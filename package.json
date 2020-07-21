@@ -1,6 +1,6 @@
 {
   "name": "@imagem/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lint configuration files for Imagem projects",
   "repository": {
     "type": "git",
